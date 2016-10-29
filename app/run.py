@@ -10,12 +10,11 @@ def index():
 		count = int(request.cookies.get('cnt'))
 	else: count = 0
 
-	resp= make_response(render_template
-							('index.html',
-							size=str(random.randrange(5,10)),
-							color=random.choice(color_list),
-							number=str(count))
-							)
+	resp= make_response(render_template('index.html', 
+					    size=str(random.randrange(5,10)),
+					    color=random.choice(color_list), 
+					    number=str(count)
+					   ))
 	count+=1
 	resp.set_cookie('cnt',str(count))
 	return resp
