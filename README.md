@@ -4,4 +4,4 @@ first project in yourssu
 result of python& flask Web Programming study.
 
 visit http://fetiu.iptime.org:5678/visitcounter
-(it sometimes could not be working)
+(sometimes it could not be working)
